@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Joshua.principal.Principal">
+   <children>
+      <Button fx:id="boton1" layoutX="943.0" layoutY="765.0" mnemonicParsing="false" onAction="#compilar" opacity="0.39" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: #000000;" text="Compilar" textFill="WHITE" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="943.0" AnchorPane.rightAnchor="337.0" />
+      <TextArea id="text1" fx:id="text1" layoutX="23.0" layoutY="93.0" prefHeight="622.0" prefWidth="1452.0" style="-fx-background-color: #484848; -fx-border-color: #484848;" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="93.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <TextArea fx:id="salida_consola" layoutX="19.0" layoutY="292.0" prefHeight="228.0" prefWidth="850.0" style="-fx-control-inner-background: #484848; -fx-border-color: #484848;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="627.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <Button fx:id="boton2" layoutX="941.0" layoutY="340.0" mnemonicParsing="false" onAction="#borrar" opacity="0.43" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: #000000;" text="Borrar" textFill="WHITE" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="941.0" AnchorPane.rightAnchor="339.0" />
+      <Label layoutX="24.0" layoutY="726.0" prefHeight="25.0" prefWidth="49.0" text="Consola" textFill="#fcfcfc" />
+      <MenuBar layoutX="2.0" layoutY="2.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-text-fill: black;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-text-fill: #ffffff;" text="File">
+            <items>
+              <MenuItem fx:id="abrir" mnemonicParsing="false" onAction="#abrir" text="Abrir" />
+                  <MenuItem fx:id="cerrar" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="254.0" fitWidth="269.0" layoutX="1203.0" layoutY="726.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../k.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="49.0" layoutX="1412.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #212121;">
+         <image>
+            <Image url="@../../t.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="1404.0" layoutY="27.0" mnemonicParsing="false" onAction="#traducir" opacity="0.0" prefHeight="59.0" prefWidth="64.0" />
+      <ImageView fitHeight="67.0" fitWidth="64.0" layoutX="1311.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../regreso.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="1310.0" layoutY="34.0" mnemonicParsing="false" onAction="#destraducir" opacity="0.0" prefHeight="59.0" prefWidth="64.0" text="Button" />
+   </children>
+</AnchorPane>
